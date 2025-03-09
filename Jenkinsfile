@@ -5,4 +5,7 @@ node {
 	stage('Test') {
 		echo "Test"
 	}
+	stage('test2'){
+		echo "Test 2"
+	}
 }
