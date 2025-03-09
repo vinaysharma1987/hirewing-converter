@@ -19,7 +19,10 @@ public class Controller {
     public String index() {
         return "Hello World";
     }
-
+    @RequestMapping(value = "/hello2", method = RequestMethod.GET)
+    public String hello2() {
+        return "Hello World";
+    }
     @GetMapping("/convert")
     public String convert(@RequestParam int input) {
         return String.valueOf(input * 87) + " Rupees";
